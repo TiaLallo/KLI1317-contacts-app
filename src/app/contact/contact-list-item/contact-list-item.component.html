@@ -1,0 +1,20 @@
+<mat-card class="al-card">
+  <mat-card-title>
+    <ngx-avatar name="{{contact.firstName}} {{contact.lastName}}"></ngx-avatar>
+  </mat-card-title>
+  <mat-card-subtitle>{{contact.firstName}} {{contact.lastName}}</mat-card-subtitle>
+  <mat-card-content>
+    <mat-icon>call</mat-icon>
+    {{contact.telephone}}
+    <br>
+    <mat-icon>email</mat-icon>
+    {{contact.email}}
+    <br>
+    <mat-icon>home</mat-icon>
+    {{contact.city}}
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <mat-icon>delete</mat-icon>
+    <mat-icon>edit</mat-icon>
+  </mat-card-actions>
+</mat-card>

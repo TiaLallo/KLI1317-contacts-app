@@ -1,0 +1,12 @@
+span {
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: pink;
+}
+
+button {
+  background-color: pink;
+  color: white;
+
+}
