@@ -1,7 +1,11 @@
-.al-card {
-  width: 100%;
+.card {
+  width: fit-content;
   height: fit-content;
-  font-size: 30px;
+  font-size: 20px;
   owerflow: auto;
+  background-color: #ffeaed;
+}
+
+button {
   background-color: #ffeaed;
 }

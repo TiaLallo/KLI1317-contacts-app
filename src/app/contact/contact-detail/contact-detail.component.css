@@ -1,0 +1,36 @@
+.detail-card {
+  width: 40%;
+  height: fit-content;
+  font-size: 20px;
+  left: 20%;
+}
+
+input {
+  padding: 5px;
+  background-color: ghostwhite;
+}
+
+mat-form-field.mat-form-field {
+  margin: 5px;
+  font-size: 18px;
+  align-content: space-around;
+}
+
+mat-icon {
+  margin: 15px;
+}
+
+.addContact {
+  position: center;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: pink;
+  color: white;
+}
+
+@media(min-width: 1024px) {
+  .mat-fab-button {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}

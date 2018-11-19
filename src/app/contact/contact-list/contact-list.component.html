@@ -1,4 +1,4 @@
-<div  fxLayout='row' fxLayoutAlign="space-around center" fxLayoutGap="10px" fxLayout.md="column" fxLayout.lt-sm="column" fxLayout.lt-md="column" fxLayout.xs="column" class="al-card-padding">
+<div  fxLayout='row' fxLayoutAlign="space-around center" fxLayoutGap="10px" fxLayout.md="column" fxLayout.lt-sm="column" fxLayout.lt-md="column" fxLayout.xs="column" class="card-padding">
   <app-contact-list-item *ngFor="let contact of contacts | paginate: { itemsPerPage: 3, currentPage: p}" [contact]="contact"
                          (contactSelect)="onContactSelect(contact)"
                          fxFlexAlign="center center"></app-contact-list-item>
@@ -6,3 +6,7 @@
 <div>
   <pagination-controls (pageChange)="p = $event" fxLayoutAlign="center"></pagination-controls>
 </div>
+
+<button mat-fab class="addContact" (click)="onContactCreate()">
+  <mat-icon>add</mat-icon>
+</button>

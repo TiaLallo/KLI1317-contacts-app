@@ -1,11 +1,14 @@
-<mat-sidenav-container class="al-sidenav-container">
-  <mat-sidenav class="al-sidenav" #sidenav [mode]="'push'" [opened]="false">
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" #sidenav [mode]="'push'" [opened]="false">
     <!-- Sidenav content -->
-    <div class="al-sidenav-center">
+    <div class="sidenav-center">
       <div>
-        <mat-icon class="al-icon-size" color="primary">account_circle</mat-icon>
+        <mat-icon class="icon-size" color="primary">account_circle</mat-icon>
         <div>
-          <span class="al-span">Tia Lallo</span>
+          <span class="span">Tia Lallo</span>
+          <br>
+          <br>
+          <a class=link href="https://github.com/TiaLallo/KLI1317-contacts-app">Github</a>
         </div>
         <br>
         <mat-divider></mat-divider>
@@ -13,8 +16,8 @@
       </div>
     </div>
   </mat-sidenav>
-  <mat-sidenav-content class="al-sidenav-content">
+  <mat-sidenav-content class="sidenav-content">
     <app-toolbar (menuClick)="sidenav.toggle()"></app-toolbar>
-    <app-contact-list></app-contact-list>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

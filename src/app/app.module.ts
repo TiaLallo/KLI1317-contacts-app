@@ -12,22 +12,34 @@ import {
   MatCardModule,
   MatDialogModule,
   MatDividerModule,
-  MatIconModule,
+  MatFormFieldModule,
+  MatIconModule, MatInputModule,
   MatSidenavModule,
   MatToolbarModule
 } from '@angular/material';
 import {AvatarModule} from 'ngx-avatar';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { ContactDetailComponent } from './contact/contact-detail/contact-detail.component';
+import {RouterModule, Routes} from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const avatarColors = ['#FFB6C1', '#2c3e50', '#310011', '#95a5a6', '#bc29b7'];
+
+const appRoutes: Routes = [
+    {path: 'contacts', component: ContactListComponent},
+    {path: 'contacts/new', component: ContactDetailComponent},
+  {path: '', redirectTo: '/contacts', pathMatch: 'full'}
+
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactListComponent,
     ContactListItemComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ContactDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -43,9 +55,14 @@ const avatarColors = ['#FFB6C1', '#2c3e50', '#310011', '#95a5a6', '#bc29b7'];
       colors: avatarColors
     }),
     FlexLayoutModule,
-    NgxPaginationModule
-
+    NgxPaginationModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
+
   providers: [ContactService],
   bootstrap: [AppComponent]
 })

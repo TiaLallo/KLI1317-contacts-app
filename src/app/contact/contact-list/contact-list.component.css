@@ -1,3 +1,18 @@
-.al-card-padding {
+.card-padding {
   padding: 80px;
+}
+
+.addContact {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: pink;
+  color: white;
+}
+
+@media(min-width: 1024px) {
+  .mat-fab-button {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
