@@ -28,6 +28,22 @@
                  [(ngModel)]="contact.city" placeholder="City">
         </mat-form-field>
         <mat-form-field appearance="fill">
+          <mat-icon matSuffix>place</mat-icon>
+          <input name="address"
+                 #address="ngModel"
+                 matInput
+                 required
+                 [(ngModel)]="contact.address" placeholder="Address">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-icon matSuffix>place</mat-icon>
+          <input name="postCode"
+                 #postCode="ngModel"
+                 matInput
+                 required
+                 [(ngModel)]="contact.postCode" placeholder="Postal Code">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
           <mat-icon matSuffix>smartphone</mat-icon>
           <input name="telephone"
                  #telephone="ngModel"

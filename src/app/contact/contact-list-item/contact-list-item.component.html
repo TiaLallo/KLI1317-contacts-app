@@ -1,8 +1,8 @@
 <mat-card class="card">
-  <mat-card-title>
-    <ngx-avatar name="{{contact.firstName}} {{contact.lastName}}"></ngx-avatar>
+  <mat-card-title fxLayout="row" fxLayoutAlign="left center">
+    <ngx-avatar name="{{contact.firstName}} {{contact.lastName}}"></ngx-avatar>{{contact.firstName}} {{contact.lastName}}
   </mat-card-title>
-  <mat-card-subtitle>{{contact.firstName}} {{contact.lastName}}</mat-card-subtitle>
+
   <mat-card-content>
     <mat-icon>call</mat-icon>
     {{contact.telephone}}
@@ -14,12 +14,16 @@
     {{contact.city}}
   <mat-card-actions align="end">
 
-    <button mat-icon-button (click)="deleteContact()">
+    <button mat-icon-button (click)="removeContact()">
     <mat-icon>delete</mat-icon>
     </button>
 
     <button mat-icon-button (click)="editContact()">
     <mat-icon>edit</mat-icon>
+    </button>
+
+    <button mat-icon-button (click)="navigateToMap()">
+      <mat-icon>place</mat-icon>
     </button>
   </mat-card-actions>
   </mat-card-content>

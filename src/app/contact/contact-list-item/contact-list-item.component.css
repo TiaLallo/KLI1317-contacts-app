@@ -6,6 +6,11 @@
   background-color: #ffeaed;
 }
 
+ngx-avatar {
+  margin: 5%;
+}
+
+
 button {
   background-color: #ffeaed;
 }

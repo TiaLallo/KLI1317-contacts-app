@@ -1,7 +1,6 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="onMenuClick()">
-    <mat-icon>menu</mat-icon>
+  <button mat-icon-button color="basic" (click)="mainAction.runAction()">
+    <mat-icon>{{mainAction.icon}}</mat-icon>
   </button>
-  <span>Contacts application</span>
+  <span>{{options.title}}</span>
 </mat-toolbar>
-

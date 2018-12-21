@@ -1,6 +1,7 @@
 .card-padding {
-  padding: 80px;
+  padding: 40px;
 }
+
 
 .addContact {
   position: fixed;
@@ -16,3 +17,5 @@
     right: 1.5rem;
   }
 }
+
+

@@ -1,5 +1,6 @@
 .detail-card {
-  width: 40%;
+  margin-top: 5%;
+  width: 50%;
   height: fit-content;
   font-size: 20px;
   left: 20%;
@@ -16,16 +17,14 @@ mat-form-field.mat-form-field {
   align-content: space-around;
 }
 
-mat-icon {
-  margin: 15px;
-}
 
-.addContact {
-  position: center;
+.fab {
+  margin-left: 38%;
+  position: static;
   bottom: 1rem;
   right: 1rem;
   background-color: pink;
-  color: white;
+  color: white;;
 }
 
 @media(min-width: 1024px) {
